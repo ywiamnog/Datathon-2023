@@ -28,7 +28,6 @@ df_atm = df_atm[(df_atm['Voter ID'] != "--")]
 df_atm_con = df_atm[(df_atm['Result'] == "Talked to Correct Person")]
 
 
-
 # calculate those talked to of the people who answered their phone
 talk_percent = df_con_talk.shape[0] / df_con.shape[0]
 print("percent talked to of those contacted:", talk_percent)
@@ -40,7 +39,3 @@ print("percent contacted:", contact_percent)
 # calculate those talked to of the total phone call attempts
 talk_total_percent = df_con_talk.shape[0] / df_atm.shape[0]
 print("total percent talked to:", talk_total_percent)
-
-# print(df_atm)
-# print(df_con_talk)
-# print(df_atm_con)
